@@ -26,9 +26,8 @@ accessLog: {}
 
 providers:
   docker:
-    # endpoint: "unix:///var/run/docker.sock"
-    endpoint: "tcp://dockerproxy:2375"
-    network: "traefik"
+    endpoint: "unix:///var/run/docker.sock"
+    network: "app"
     exposedbydefault: false
     watch: true
 
